@@ -1,0 +1,557 @@
+/* ==========================================================================
+   Casa Mediterránea — Minimal Modern Home & Mediterranean Living Stylesheet
+   Palette:
+   - Background: #FAF8F4
+   - Text: #292824
+   - Secondary Background: #EDE5D9
+   - Primary Accent: #747A54 (Olive)
+   - Secondary Accent: #B96E4D (Terracotta)
+   - Border: #E4DFD7
+   ========================================================================== */
+
+:root {
+  --color-med-bg: #FAF8F4;
+  --color-med-text: #292824;
+  --color-med-secondary-bg: #EDE5D9;
+  --color-med-accent-primary: #747A54;
+  --color-med-accent-secondary: #B96E4D;
+  --color-med-border: #E4DFD7;
+  --font-heading-family: "Italiana", "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, serif;
+}
+
+body {
+  background-color: var(--color-med-bg);
+  color: var(--color-med-text);
+  letter-spacing: -0.01em;
+}
+
+/* --------------------------------------------------------------------------
+   Header & Announcement Bar
+   -------------------------------------------------------------------------- */
+.announcement-bar {
+  background-color: #292824;
+  color: #FAF8F4;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.8rem 1.6rem;
+}
+
+.header__heading-link .h2 {
+  font-family: var(--font-heading-family);
+  font-size: 2.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-med-text);
+}
+
+.list-menu__item {
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+  color: var(--color-med-text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.list-menu__item:hover {
+  color: var(--color-med-accent-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Shop By Room Section
+   -------------------------------------------------------------------------- */
+.shop-by-room {
+  position: relative;
+}
+
+.shop-by-room__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+@media screen and (min-width: 750px) {
+  .shop-by-room__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .shop-by-room__grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
+.room-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: #FAF8F4;
+  border: 1px solid var(--color-med-border);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-med-accent-primary);
+  box-shadow: 0 8px 24px rgba(41, 40, 36, 0.06);
+}
+
+.room-card__media {
+  position: relative;
+  width: 100%;
+  padding-bottom: 110%;
+  overflow: hidden;
+  background-color: var(--color-med-secondary-bg);
+}
+
+.room-card__media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.room-card:hover .room-card__media img {
+  transform: scale(1.04);
+}
+
+.room-card__content {
+  padding: 1.2rem 1.4rem;
+  text-align: center;
+}
+
+.room-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-med-text);
+  margin: 0;
+}
+
+.room-card__count {
+  font-size: 1.2rem;
+  color: #76746E;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Product Cards Enhancements
+   -------------------------------------------------------------------------- */
+.card-wrapper .card {
+  border: 1px solid var(--color-med-border);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-wrapper:hover .card {
+  border-color: #D2CCC1;
+  box-shadow: 0 6px 20px rgba(41, 40, 36, 0.05);
+}
+
+.card__information {
+  padding: 1.6rem 1.4rem;
+}
+
+.card__heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-med-text);
+}
+
+.card-information .price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-med-text);
+}
+
+.price__sale .price-item--sale {
+  color: var(--color-med-accent-secondary) !important;
+  font-weight: 700;
+}
+
+.price__sale .price-item--regular {
+  color: #8C887E;
+  text-decoration: line-through;
+  font-size: 1.3rem;
+}
+
+.card-badge-discount {
+  display: inline-block;
+  background-color: var(--color-med-accent-secondary);
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 2px;
+  letter-spacing: 0.03em;
+  margin-left: 0.6rem;
+}
+
+.card-material-tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--color-med-accent-primary);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------------------------------
+   Brand Benefits Reassurance Grid
+   -------------------------------------------------------------------------- */
+.brand-benefits {
+  background-color: var(--color-med-secondary-bg);
+  border-top: 1px solid var(--color-med-border);
+  border-bottom: 1px solid var(--color-med-border);
+  padding: 4rem 2rem;
+}
+
+.brand-benefits__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 750px) {
+  .brand-benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brand-benefits__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.brand-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+.brand-benefit-item__icon {
+  width: 4.4rem;
+  height: 4.4rem;
+  min-width: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FAF8F4;
+  color: var(--color-med-accent-primary);
+  border: 1px solid var(--color-med-border);
+}
+
+.brand-benefit-item__icon svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.brand-benefit-item__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-med-text);
+  margin: 0 0 0.4rem 0;
+}
+
+.brand-benefit-item__description {
+  font-size: 1.3rem;
+  color: #5C5A52;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Home Inspiration / Lookbook Section
+   -------------------------------------------------------------------------- */
+.home-inspiration {
+  position: relative;
+}
+
+.home-inspiration__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .home-inspiration__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+.inspiration-card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--color-med-border);
+  background-color: #FFFFFF;
+}
+
+.inspiration-card__media {
+  position: relative;
+  padding-bottom: 125%;
+  overflow: hidden;
+}
+
+.inspiration-card__media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.inspiration-card:hover .inspiration-card__media img {
+  transform: scale(1.03);
+}
+
+.inspiration-card__info {
+  padding: 1.6rem;
+}
+
+.inspiration-card__tag {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-med-accent-primary);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.inspiration-card__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-med-text);
+  margin: 0 0 0.6rem 0;
+}
+
+.inspiration-card__link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-med-accent-secondary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.inspiration-card__link:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Outdoor Living & Storage Feature Banners
+   -------------------------------------------------------------------------- */
+.med-feature-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--color-med-secondary-bg);
+  border: 1px solid var(--color-med-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 900px) {
+  .med-feature-split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.med-feature-split__media {
+  position: relative;
+  min-height: 340px;
+}
+
+.med-feature-split__media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.med-feature-split__content {
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  .med-feature-split__content {
+    padding: 6rem 5rem;
+  }
+}
+
+.med-feature-split__eyebrow {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-med-accent-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.med-feature-split__title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--color-med-text);
+  margin: 0 0 1.6rem 0;
+}
+
+.med-feature-split__text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #4A473E;
+  margin-bottom: 2.4rem;
+}
+
+/* --------------------------------------------------------------------------
+   Product Detail Page (PDP) Components
+   -------------------------------------------------------------------------- */
+.pdp-highlights-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  padding: 1.6rem;
+  background-color: #FAF8F4;
+  border: 1px solid var(--color-med-border);
+  border-radius: 4px;
+  margin: 1.6rem 0;
+}
+
+@media screen and (min-width: 750px) {
+  .pdp-highlights-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pdp-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-med-text);
+}
+
+.pdp-highlight-item svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: var(--color-med-accent-primary);
+  flex-shrink: 0;
+}
+
+/* Product Specifications & Metafields Table */
+.pdp-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.6rem 0;
+  font-size: 1.35rem;
+}
+
+.pdp-specs-table tr {
+  border-bottom: 1px solid var(--color-med-border);
+}
+
+.pdp-specs-table th {
+  text-align: left;
+  padding: 1rem 0;
+  font-weight: 600;
+  color: #5C5A52;
+  width: 40%;
+}
+
+.pdp-specs-table td {
+  padding: 1rem 0;
+  color: var(--color-med-text);
+  font-weight: 500;
+}
+
+/* Payment & Security Reassurance on PDP */
+.pdp-payment-reassurance {
+  margin: 2rem 0;
+  padding: 1.6rem;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-med-border);
+  border-radius: 4px;
+}
+
+.pdp-payment-reassurance__title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-med-text);
+  margin: 0 0 0.8rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.pdp-payment-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.pdp-payment-badge {
+  font-size: 1.15rem;
+  background-color: #FAF8F4;
+  border: 1px solid var(--color-med-border);
+  padding: 0.35rem 0.8rem;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #4A473E;
+}
+
+/* Buttons */
+.button--primary {
+  background-color: var(--color-med-accent-primary) !important;
+  color: #FAF8F4 !important;
+  border: 1px solid var(--color-med-accent-primary) !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  transition: opacity 0.2s ease, transform 0.1s ease !important;
+}
+
+.button--primary:hover {
+  opacity: 0.92;
+}
+
+.button--secondary {
+  background-color: transparent !important;
+  color: var(--color-med-text) !important;
+  border: 1px solid var(--color-med-text) !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+}
+
+.button--secondary:hover {
+  background-color: var(--color-med-text) !important;
+  color: #FAF8F4 !important;
+}

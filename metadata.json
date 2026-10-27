@@ -1,0 +1,8 @@
+{
+  "name": "Shopify Dawn Theme Preview",
+  "description": "Live preview dev server for Shopify Dawn e-commerce theme with full storefront sections, collections, product cards, and cart.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

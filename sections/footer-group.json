@@ -1,0 +1,54 @@
+{
+  "name": "Pie de página",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand_text": {
+          "type": "text",
+          "settings": {
+            "heading": "Casa Mediterránea",
+            "subtext": "<p>Mobiliario y decoración atemporal con alma mediterránea. Maderas nobles certificadas, lino natural y acabados artesanos para hogares en calma.</p>"
+          }
+        },
+        "footer_links_shop": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Estancias & Colección",
+            "menu": "main-menu"
+          }
+        },
+        "footer_links_help": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Servicio & Ayuda",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "brand_text",
+        "footer_links_shop",
+        "footer_links_help"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Suscríbete a nuestra newsletter",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 56,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "sections": {
+    "hero_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Diseño Mediterráneo y Calidez Natural",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Muebles concebidos con maderas nobles, lino lavado y fibras artesanales para crear espacios atemporales llenos de luz y serenidad.",
+            "text_style": "body"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Ver Novedades",
+            "button_link_1": "/collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Explorar Estancias",
+            "button_link_2": "/collections/all",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "image_overlay_opacity": 20,
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "shop_by_room": {
+      "type": "shop-by-room",
+      "blocks": {
+        "room_salon": {
+          "type": "room",
+          "settings": {
+            "title": "Salón",
+            "count_text": "Sofás, mesas y sillones",
+            "link": "/collections/all"
+          }
+        },
+        "room_comedor": {
+          "type": "room",
+          "settings": {
+            "title": "Comedor",
+            "count_text": "Mesas de roble y sillas",
+            "link": "/collections/all"
+          }
+        },
+        "room_dormitorio": {
+          "type": "room",
+          "settings": {
+            "title": "Dormitorio",
+            "count_text": "Camas, mesitas y lino",
+            "link": "/collections/all"
+          }
+        },
+        "room_exterior": {
+          "type": "room",
+          "settings": {
+            "title": "Terraza & Exterior",
+            "count_text": "Madera de acacia y teca",
+            "link": "/collections/all"
+          }
+        },
+        "room_recibidor": {
+          "type": "room",
+          "settings": {
+            "title": "Recibidor",
+            "count_text": "Consolas, bancos y espejos",
+            "link": "/collections/all"
+          }
+        },
+        "room_despacho": {
+          "type": "room",
+          "settings": {
+            "title": "Despacho",
+            "count_text": "Escritorios y almacenaje",
+            "link": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "room_salon",
+        "room_comedor",
+        "room_dormitorio",
+        "room_exterior",
+        "room_recibidor",
+        "room_despacho"
+      ],
+      "settings": {
+        "title": "Comprar por Estancia",
+        "subtitle": "Piezas concebidas para transformar los espacios de tu vida cotidiana",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "color_scheme": "scheme-1",
+        "padding_top": 48,
+        "padding_bottom": 40
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Los Más Vendidos",
+        "heading_size": "h2",
+        "description": "Las piezas favoritas de nuestros clientes por su equilibrio entre estética natural y durabilidad.",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 48
+      }
+    },
+    "featured_collections": {
+      "type": "collection-list",
+      "blocks": {
+        "col_roble": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "all"
+          }
+        },
+        "col_lino": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "all"
+          }
+        },
+        "col_fibras": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "all"
+          }
+        }
+      },
+      "block_order": [
+        "col_roble",
+        "col_lino",
+        "col_fibras"
+      ],
+      "settings": {
+        "title": "Colecciones Destacadas",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "storage_organization": {
+      "type": "storage-organization",
+      "settings": {
+        "eyebrow": "Funcionalidad & Estética",
+        "title": "Almacenaje y Orden: Espacios Serenos",
+        "text": "<p>Aparadores en roble natural, vitrinas con cannage trenzado y módulos suspendidos diseñados para organizar sin restar ligereza visual.</p>",
+        "button_label": "Ver Muebles de Almacenaje",
+        "button_link": "/collections/all",
+        "color_scheme": "scheme-1",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "outdoor_living": {
+      "type": "outdoor-living",
+      "settings": {
+        "eyebrow": "Terraza, Balcón & Porche",
+        "title": "Vida en el Exterior: El Clima Mediterráneo",
+        "text": "<p>Maderas de teca y acacia certificada, cuerdas hidrófugas tratadas y tapizados resistentes para convertir tu terraza en un oasis continuo.</p>",
+        "button_label": "Descubrir Colección Exterior",
+        "button_link": "/collections/all",
+        "color_scheme": "scheme-2",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "home_inspiration": {
+      "type": "home-inspiration",
+      "blocks": {
+        "insp_1": {
+          "type": "inspiration",
+          "settings": {
+            "tag": "Salón Serena",
+            "title": "Madera de roble, lino y luz filtrada",
+            "link_text": "Comprar este ambiente",
+            "link": "/collections/all"
+          }
+        },
+        "insp_2": {
+          "type": "inspiration",
+          "settings": {
+            "tag": "Comedor de Autor",
+            "title": "Mesa maciza y sillería en ratán trenzado",
+            "link_text": "Ver comedor completo",
+            "link": "/collections/all"
+          }
+        },
+        "insp_3": {
+          "type": "inspiration",
+          "settings": {
+            "tag": "Dormitorio Calma",
+            "title": "Cabeceros en fibras y ropa de cama en tonos arena",
+            "link_text": "Explorar selección",
+            "link": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "insp_1",
+        "insp_2",
+        "insp_3"
+      ],
+      "settings": {
+        "title": "Inspiración para el Hogar",
+        "subtitle": "Ideas editoriales y ambientes reales con el sello inconfundible del diseño mediterráneo",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "color_scheme": "scheme-1",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "brand_benefits": {
+      "type": "brand-benefits",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "truck",
+            "title": "Envío a Península y Baleares",
+            "description": "Entrega cuidada y gratuita a partir de 60€ con subida a domicilio."
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shield",
+            "title": "3 Años de Garantía Oficial",
+            "description": "Compromiso de solidez estructural y calidad en cada pieza."
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "leaf",
+            "title": "Madera Sostenible FSC",
+            "description": "Maderas nobles procedentes de talas reguladas y acabados al agua."
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "heart",
+            "title": "Devolución en 30 Días",
+            "description": "Pruébalo en casa sin prisa con nuestro servicio de recogida fácil."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Únete al Club Casa Mediterránea",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Suscríbete para recibir novedades exclusivas, preventas de temporada y un código de <strong>10€ de bienvenida</strong> para tu primer pedido.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "hero_banner",
+    "shop_by_room",
+    "bestsellers",
+    "featured_collections",
+    "storage_organization",
+    "outdoor_living",
+    "home_inspiration",
+    "brand_benefits",
+    "newsletter"
+  ]
+}
